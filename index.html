@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="css/style.css">
+        <meta charset="UTF-8">
+        <meta http-equiv="author" content="gildasio_vs">
+          <script type="text/javascript" src="js/script.js"></script>
+        <title>Calculadora com JS</title>
+    </head>
+    <body>
+        <div class="calculadora">
+            <form method="dialog">
+                <input type="text" name="text" id="display" readonly>
+                <div class="number">
+                    <button id="um" onclick="pressNum(this)">1</button>
+                    <button id="dois" onclick="pressNum(this)">2</button>
+                    <button id="tres" onclick="pressNum(this)">3</button>
+                    <button id="somar" onclick="pressOperator(this)">+</button>
+                    <button id="quatro" onclick="pressNum(this)">4</button>
+                    <button id="cinco" onclick="pressNum(this)">5</button>
+                    <button id="seis" onclick="pressNum(this)">6</button>
+                    <button id="subtrair" onclick="pressOperator(this)">-</button>
+                    <button id="sete" onclick="pressNum(this)">7</button>
+                    <button id="oito" onclick="pressNum(this)">8</button>
+                    <button id="nove" onclick="pressNum(this)">9</button>
+                    <button id="multiplicar" onclick="pressOperator(this)">*</button>
+                    <button id="clean" onclick="clearAll()">CE</button>
+                    <button id="zero" onclick="pressNum(this)">0</button>
+                    <button id="dividir" onclick="pressOperator(this)">/</button>
+                    <input type="submit" name="submit" value="=" onclick="pressEqual()">
+                </div> 
+            </form>
+        </div>
+    </body>
+</html>
